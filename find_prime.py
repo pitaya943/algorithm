@@ -44,9 +44,9 @@ def printProgressBar(iteration, total, prefix='', suffix='', decimals=1, length=
 
     # bar = ''.join(dick[0:int(filledLength/2)]) + \
     #     '-' * (length - filledLength)
-    # bar = ''.join(bar_char[0:int(filledLength/2)]) + \
-    #     '-' * (length - filledLength)
-    bar = fill * filledLength + '-' * (length - filledLength)
+    bar = ''.join(bar_char[0:int(filledLength/2)]) + \
+        '-' * (length - filledLength)
+    # bar = fill * filledLength + '-' * (length - filledLength)
     print(f'\r{prefix} |{bar}| {percent}% {suffix}', end=printEnd)
 
 
